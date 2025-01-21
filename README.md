@@ -160,9 +160,9 @@ Lists all required Python libraries. Install them with:</br>
 
 # 5. UI
 ### Landing Page
-![Screenshot 2025-01-19 192926](https://github.com/user-attachments/assets/26d78b29-e2fd-40fd-a1be-fa5d00af1e3f)
+![Screenshot 2025-01-19 192926](https://github.com/user-attachments/assets/29a6eeaa-3499-423a-9937-d56f7c7d5d53)
 ### Prediction Page
-![Screenshot 2025-01-19 192945](https://github.com/user-attachments/assets/76e77995-b44e-43f0-bfc3-4c124bc96589)
+![Screenshot 2025-01-19 192945](https://github.com/user-attachments/assets/2988b0b3-355f-4fe3-9422-21e70c0e974c)
 ## Author
 <a href="https://github.com/deepanshu800/" target="_blank">Deepanshu Bhargav</a></br>
 <a href="https://github.com/TDGrovin/" target="_blank">Grovin Singh Atwal</a>
