@@ -119,20 +119,19 @@ Lists all required Python libraries. Install them with:</br>
 **Libraries**
   * `NumPy 2.1.2`:<a href="https://numpy.org/doc/1.26/" target="_blank"><img src="https://numpy.org/images/logo.svg" width=50 align="center"></a></br>
     NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
-  * `Pandas 2.2.3`:<a href="https://pandas.pydata.org/" target="_blank"><img src="https://pandas.pydata.org/static/img/pandas_white.svg" width=100 align="center"></a>
-  </br>
+  * `Pandas 2.2.3`:<a href="https://pandas.pydata.org/" target="_blank"><img src="https://pandas.pydata.org/static/img/pandas_white.svg" width=100 align="center"></a></br>
     Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
-  * `Scikit-learn 1.5.2`: <a href="https://scikit-learn.org/stable/" target="_blank"><img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=75 align="center"></a>
-  </br>
+    
+  * `Scikit-learn 1.5.2`: <a href="https://scikit-learn.org/stable/" target="_blank"><img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=75 align="center"></a></br>
     scikit-learn is a free and open-source machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support-vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.
-  * `NLTK 3.9.1`: <a href="https://www.nltk.org/" target="_blank">Documentation</a>
-  </br>
+    
+  * `NLTK 3.9.1`: <a href="https://www.nltk.org/" target="_blank">Documentation</a></br>
     The Natural Language Toolkit, or more commonly NLTK, is a suite of libraries and programs for symbolic and statistical natural language processing (NLP) for English written in the Python programming language. It supports classification, tokenization, stemming, tagging, parsing, and semantic reasoning functionalities.
-  * `Matplotlib 3.9.2`: <a href="https://matplotlib.org/" target="_blank"><img src="https://matplotlib.org/stable/_static/logo_dark.svg" width=100 align="center"></a>
-  </br>
+    
+  * `Matplotlib 3.9.2`: <a href="https://matplotlib.org/" target="_blank"><img src="https://matplotlib.org/stable/_static/logo_dark.svg" width=100 align="center"></a></br>
     Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK.
-  * `Flask 3.1.0`: <a href="https://flask.palletsprojects.com/en/stable/" target="_blank"><img src="https://flask.palletsprojects.com/en/stable/_images/flask-horizontal.png" width=100 align="center"></a>
-  </br>
+    
+  * `Flask 3.1.0`: <a href="https://flask.palletsprojects.com/en/stable/" target="_blank"><img src="https://flask.palletsprojects.com/en/stable/_images/flask-horizontal.png" width=100 align="center"></a></br>
     Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
 
 # 4. Working
