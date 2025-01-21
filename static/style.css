@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  font-family: " Roboto", sans-serif;
+  color: #ffffffcb;
+  background: linear-gradient(135deg, #102b47, #7ae5f4);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #6bbe92;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #d3d3d3;
+}
+
+#input_message {
+  background-color: #4f6877;
+  color: #ffffffcb;
+  width: 292px;
+  border: 1px solid #6bbe92;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+#input_message::placeholder {
+  color: #ffffffcb;
+}
+
+.predict_button,
+.redirect_button {
+  background-color: #6bbe92;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-align: center;
+  color: #ffffffcb;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.predict_button:hover,
+.redirect_button:hover {
+  background-color: #55c99d;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ffffffcb;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}

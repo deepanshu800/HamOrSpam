@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Deepanshu and Grovin Singh Atwal" />
+    <title>Spam Detection - Predict</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="icon" type="image/png" href="/static/logo.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Spam Detection Machine</h1>
+      <form action="{{ url_for('predict') }}" method="post">
+        <input
+          id="input_message"
+          type="text"
+          name="message"
+          placeholder="Enter your message here"
+          required
+        />
+        <br />
+        <button type="submit" class="predict_button">Predict</button>
+      </form>
+      {% if prediction_result %}
+      <div class="result">{{ prediction_result }}</div>
+      {% endif %}
+    </div>
+  </body>
+</html>
