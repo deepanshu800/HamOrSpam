@@ -1,24 +1,80 @@
 # SpamDetection
 **SpamDetection** is a Logistic Regression based model with Linear Discriminant Analysis (LDA) for identifying spam messages in text.
-# Setup
-## Installing JupyterLab
-Using `pip`:</br>
-`pip install jupyterlab`</br></br>
-Using Anaconda:</br>
-`conda install -c conda-forge jupyterlab`</br></br>
-If you only want to use the model, you don't need JupyterLab or Anaconda. Instead, install Flask in a virtual environment.
-## Setting Up Flask
-1. Create a Virtual Environment</br></br>
-`conda create -n spam-detection-env python=3.12`</br></br>
-2. Activate Virtual Environment</br></br>
-   `conda activate spam-detection-env`</br></br>
-3. Install Dependencies</br></br>
-   `pip install Flask`</br></br>
-4. Install Additional Packages</br></br>
-   `pip install -r requirements.txt`</br></br>
-## Starting JupyterLab
-`conda activate spam-detection-env`</br>`jupyter lab`</br></br>
-## Files and Structure
+
+# Table of Contents
+<ol>
+  <li>
+    <a href="#1-setup">Setup</a>
+    <ul>
+      <li><a href="#11-installing-jupyter">Installing with Jupyter</a></li>
+      <li><a href="#12-installing-requirements">Installing Requirements</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-files-and-structure">Files and Structure</a></li>
+  <li><a href="#3-technologies-used">Technologies Used</a></li>
+  <li>
+  <a href="#4-working">Working</a>
+    <ul>
+    <li><a href="#41-dataset-analysis">Dataset Analysis</a></li>
+    <li><a href="#42-dimension-analysis-dimension_analysisipynb">Dimension Analysis</a></li>
+    <li><a href="#43-model-selection-model_selectionipynb">Model Selection</a></li>
+    <li><a href="#44-final-modelfinal_modelipynb">Final Model</a></li>
+    <li><a href="#45-flask-application">Flask Application</a></li>
+    </ul>
+  </li>
+  <li><a href="#5-ui">UI</a></li>
+</ol>
+
+# 1. Setup
+If you only want to use the model, you do not need Jupyter.
+## 1.1 Installing Jupyter
+We recommend using Anaconda for development of this project
+<br/><br/>
+Using `pip`:
+```sh
+pip install jupyter
+```
+Using `conda`:
+```sh
+conda install -c conda-forge jupyter
+```
+### To open Jupyter (from conda environment):
+```sh
+cd <path-to-project-directory>
+```
+To open jupyter-lab
+```sh
+jupter-lab
+```
+To open jupyter-notebook
+```sh
+jupyter-notebook
+```
+Note: It is preferred to install Jupyter using `pip` instead of `conda` because the latter may contain older version of Jupyter
+</br>
+## 1.2 Installing Requirements
+### a. Create a Virtual Environment
+Using `conda`:
+```sh
+conda create -n <env-name> python=3.13.0
+```
+Using `Python venv`:
+```sh
+python -m venv <virtual-environment-name>
+```
+### b. Activate Virtual Environment
+```sh
+conda activate spam-detection-env
+```
+Or
+```sh
+<path-to-virtual-environment>/Scripts/activate
+```
+### c. Install Requirements
+```sh
+pip install -r requirements.txt
+```
+# 2. Files and Structure
 **1. Dataset**
 * `spam.csv`</br>Contains labeled data for training and testing the spam detection model.</br>
 
@@ -56,42 +112,54 @@ Lists all required Python libraries. Install them with:</br>
   **OR**</br>
   `pip install package_1, package_2, package_3,...`</br>
   
-## Technologies Used
+# 3. Technologies Used
 **Programming Language**
-  * `Python 3.12.8`:<a href="https://www.python.org/downloads/release/python-3128/" target="_blank">Python Official</a></br>
+  * Python 3.13.0: <a href="https://docs.python.org/3.13/" target="_blank"><img src="https://www.python.org/static/img/python-logo.png" width=100 align="center"></a>
 
 **Libraries**
-  * `NumPy 1.26.4`:<a href="https://numpy.org/doc/1.26/" target="_blank">Documentation</a></br>
+  * `NumPy 2.1.2`:<a href="https://numpy.org/doc/1.26/" target="_blank"><img src="https://numpy.org/images/logo.svg" width=50 align="center"></a></br>
     NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
-  * `Pandas`:<a href="https://pandas.pydata.org/" target="_blank">Documentation</a></br>
+  * `Pandas 2.2.3`:<a href="https://pandas.pydata.org/" target="_blank"><img src="https://pandas.pydata.org/static/img/pandas_white.svg" width=100 align="center"></a>
+  </br>
     Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
-  * `Scikit-learn`:<a href="https://scikit-learn.org/stable/" target="_blank">Documentation</a></br>
+  * `Scikit-learn 1.5.2`: <a href="https://scikit-learn.org/stable/" target="_blank"><img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=75 align="center"></a>
+  </br>
     scikit-learn is a free and open-source machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support-vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.
-  * `NLTK`:<a href="https://www.nltk.org/" target="_blank">Documentation</a></br>
+  * `NLTK 3.9.1`: <a href="https://www.nltk.org/" target="_blank">Documentation</a>
+  </br>
     The Natural Language Toolkit, or more commonly NLTK, is a suite of libraries and programs for symbolic and statistical natural language processing (NLP) for English written in the Python programming language. It supports classification, tokenization, stemming, tagging, parsing, and semantic reasoning functionalities.
-  * `Matplotlib`:<a href="https://matplotlib.org/" target="_blank">Documentation</a></br>
+  * `Matplotlib 3.9.2`: <a href="https://matplotlib.org/" target="_blank"><img src="https://matplotlib.org/stable/_static/logo_dark.svg" width=100 align="center"></a>
+  </br>
     Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK.
-  * `Flask`:<a href="https://flask.palletsprojects.com/en/stable/" target="_blank">Documentation</a></br>
+  * `Flask 3.1.0`: <a href="https://flask.palletsprojects.com/en/stable/" target="_blank"><img src="https://flask.palletsprojects.com/en/stable/_images/flask-horizontal.png" width=100 align="center"></a>
+  </br>
     Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
 
-## WORKING
-**1. Dataset Analysis** (`Dimension_Analysis.ipynb`)
-* Analysing Data for variance, low bias, and is linearly classifiable.
-  
-**2. Model Selection** (`Model_Selection.ipynb`)
-* Several models were compared, and Logistic Regression was chosen due to its high accuracy and F1 scores:
+# 4. Working
+## 4.1 Dataset Analysis
+* Our data was linear because linear models had better accuracy than non-linear models.
+* Our dataset has low variance because subsets of dataset had similiar accuracies.
+
+## 4.2 Dimension Analysis (`dimension_analysis.ipynb`)
+* Our dataset had text messages with corressponding labels. After NLP, we produced a sparse matrix X of dimensions 5572 x 6221.
+* Dimensionality reduction was needed and we implemented both feature selection and feature projection techniques.
+* Linear Discriminat Analysis performed the best and reduced the dimensionality from 6221 -> 1.
+
+## 4.3 Model Selection (`model_selection.ipynb`)
+* Both linear and non-linear classification models were implemented
+* Logistic Regression performed the best with evaluation metric:
   * Train Accuracy: 99.82%
   * Test Accuracy: 98.57%
   * Train F1 Score: 0.99
   * Test F1 Score: 0.94
 
-**3. Final Model** (`Final_Model.ipynb`)
-* Implements the Logistic Regression model with LDA for dimensionality reduction.
+## 4.4 Final Model(`Final_Model.ipynb`)
+* Our final model performs classification by first reducing dimension of dataset and then training on Logistic Regression model. 
   
-**4. Flask Application**
+## 4.5 Flask Application
 * A user-friendly interface allows users to input a message and receive predictions (Spam or Ham).
 
-## UI
+# 5. UI
 ### Landing Page
 ![Screenshot 2025-01-19 192926](https://github.com/user-attachments/assets/26d78b29-e2fd-40fd-a1be-fa5d00af1e3f)
 ### Prediction Page
