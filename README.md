@@ -1,4 +1,4 @@
-# SpamDetection
+# Spam Detection
 **SpamDetection** is a Logistic Regression based model with Linear Discriminant Analysis (LDA) for identifying spam messages in text.
 
 # Table of Contents
