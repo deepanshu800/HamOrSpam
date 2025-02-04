@@ -12,13 +12,16 @@
     <div class="container">
       <h1>Spam Detection Machine</h1>
       <form action="{{ url_for('predict') }}" method="post">
-        <input
-          id="input_message"
-          type="text"
-          name="message"
-          placeholder="Enter your message here"
-          required
-        />
+        <div id="input-container">
+          <input
+            id="input_message"
+            type="text"
+            name="message"
+            placeholder="Enter your message here"
+            required
+          />
+          <img id="mic-icon" src="/static/microphone.png" />
+        </div>
         <br />
         <button type="submit" class="predict_button">Predict</button>
       </form>
@@ -26,5 +29,7 @@
       <div class="result">{{ prediction_result }}</div>
       {% endif %}
     </div>
+
+    <script src="/static/script.js"></script>
   </body>
 </html>
