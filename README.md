@@ -166,3 +166,4 @@ Lists all required Python libraries. Install them with:</br>
 ## Author
 <a href="https://github.com/deepanshu800/" target="_blank">Deepanshu Bhargav</a></br>
 <a href="https://github.com/TDGrovin/" target="_blank">Grovin Singh Atwal</a>
+<a href="https://github.com/DeepakKumarRohilla/" target="_blank">Deepak Kumar Rohilla</a>
